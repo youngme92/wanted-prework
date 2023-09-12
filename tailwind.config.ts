@@ -74,6 +74,9 @@ const config: Config = {
           "@apply mx-auto lg:max-w-[1440px] md:max-w-[768px] sm:max-w-[375px]":
             "",
         },
+        ".image_fit": {
+          "@apply absolute w-[100%] h-[100%]": "",
+        },
       });
     },
   ],

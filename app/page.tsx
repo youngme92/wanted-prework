@@ -1,11 +1,10 @@
 import Image from "next/image";
-
-import prework_Image1 from "@/images/prework_Image1.png";
-import prework_Image2 from "@/images/prework_Image2.png";
-import prework_Image3 from "@/images/prework_Image3.png";
-import prework_Image4 from "@/images/prework_Image4.png";
-import prework_Image5 from "@/images/prework_Image5.png";
-import prework_Image6 from "@/images/prework_Image6.png";
+import prework_Image1 from "@/public/images/prework_Image1.png";
+import prework_Image2 from "@/public/images/prework_Image2.png";
+import prework_Image3 from "@/public/images/prework_Image3.png";
+import prework_Image4 from "@/public/images/prework_Image4.png";
+import prework_Image5 from "@/public/images/prework_Image5.png";
+import prework_Image6 from "@/public/images/prework_Image6.png";
 import Button from "@/components/Button";
 import Reactions from "@/components/Reactions";
 import TextBox from "@/components/TextBox";
@@ -22,12 +21,18 @@ export default function Home() {
   return (
     <main className="gap-5 min-h-screen bg-backgroundColor justify-between p-[40px] pt-[90px] overflow-x-hidden main-width">
       <div className="flex flex-col items-center justify-center relative bg-black card1 p-20">
-        <Image
+        {/* <Image
           className="opacity-40 object-cover"
           layout="fill"
           src={prework_Image1}
           alt="prework_Image1"
+        /> */}
+        <img
+          className="opacity-40 object-cover image_fit"
+          src="images/prework_Image1.png"
+          alt="prework_Image1"
         />
+
         <div className="flex flex-col z-10 items-center p-12 sm:p-2 uppercase text-white">
           <TextBox title="Finance" />
           <p className="font-extrabold text-4xl sm:w-[275px] sm:text-xl text-center pt-3">
@@ -43,10 +48,15 @@ export default function Home() {
         <Reactions />
       </div>
       <div className="flex flex-col items-center relative bg-black card2">
-        <Image
+        {/* <Image
           className="opacity-40 object-cover"
           layout="fill"
           src={prework_Image5}
+          alt="prework_Image5"
+        /> */}
+        <img
+          className="opacity-40 object-cover image_fit"
+          src="images/prework_Image5.png"
           alt="prework_Image5"
         />
         <div className="flex flex-col z-10 items-start pt-4 uppercase text-white">
@@ -91,10 +101,15 @@ export default function Home() {
         ))}
       </div>
       <div className="flex flex-col items-center relative bg-black card5">
-        <Image
+        {/* <Image
           className="opacity-40 object-cover"
           layout="fill"
           src={prework_Image2}
+          alt="prework_Image2"
+        /> */}
+        <img
+          className="opacity-40 object-cover image_fit"
+          src="images/prework_Image2.png"
           alt="prework_Image2"
         />
         <div className="flex flex-col z-10 items-start pt-4 uppercase text-white">
@@ -107,10 +122,15 @@ export default function Home() {
         <Reactions />
       </div>
       <div className="flex flex-col items-center relative bg-black card6">
-        <Image
+        {/* <Image
           className="opacity-40 object-cover"
           layout="fill"
           src={prework_Image3}
+          alt="prework_Image3"
+        /> */}
+        <img
+          className="opacity-40 object-cover image_fit"
+          src="images/prework_Image3.png"
           alt="prework_Image3"
         />
         <div className="flex flex-col z-10 items-start pt-4 uppercase text-white">
@@ -122,10 +142,15 @@ export default function Home() {
         <Reactions />
       </div>
       <div className=" flex flex-col items-center relative bg-black card7">
-        <Image
+        {/* <Image
           className="opacity-40 object-cover"
           layout="fill"
           src={prework_Image4}
+          alt="prework_Image4"
+        /> */}
+        <img
+          className="opacity-40 object-cover image_fit"
+          src="images/prework_Image4.png"
           alt="prework_Image4"
         />
         <div className="flex flex-col z-10 items-start pt-4 uppercase text-white">
@@ -138,10 +163,15 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center relative bg-black card8">
-        <Image
+        {/* <Image
           className="opacity-40 object-cover"
           layout="fill"
           src={prework_Image6}
+          alt="prework_Image6"
+        /> */}
+        <img
+          className="opacity-40 object-cover image_fit"
+          src="images/prework_Image6.png"
           alt="prework_Image6"
         />
         <div className="flex flex-col z-10 items-start pt-4 uppercase text-white">
