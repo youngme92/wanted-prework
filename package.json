@@ -14,7 +14,6 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
@@ -41,6 +40,7 @@
     "@storybook/nextjs": "^7.4.0",
     "@storybook/react": "^7.4.0",
     "@storybook/testing-library": "^0.2.0",
+    "@types/node": "^20.10.8",
     "eslint-plugin-storybook": "^0.6.13",
     "storybook": "^7.4.0"
   }
