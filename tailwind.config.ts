@@ -14,8 +14,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        backgroundColor: "#F9FAFC",
-        primaryColor: "#FF565C",
+        darkColor: "#1d1f24",
+        darkOpacity4Color: "rgba(0, 0, 0, 0.4)",
+        darkOpacity7Color: "rgba(0, 0, 0, 0.7)",
+        lightColor: "#fff",
+        lightGrayColor: "#f2f3f6",
+        lightOpacity7Color: "rgba(255, 255, 255, 0.7)",
+        lightOpacity2Color: "rgba(255, 255, 255, 0.2)",
+        lightOpacity3Color: "rgba(255, 255, 255, 0.3)",
+        pointColor: "#ff565c",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -26,6 +33,12 @@ const config: Config = {
         sm: { max: "767px" },
         md: { min: "768px", max: "1079px" },
         lg: { min: "1080px" },
+      },
+      boxShadow: {
+        nav: "0 0 0.5rem -0.5rem var(--dark-color)",
+      },
+      willChange: {
+        "left-top": "height, box-shadow",
       },
     },
   },
@@ -76,6 +89,10 @@ const config: Config = {
         },
         ".image_fit": {
           "@apply absolute w-[100%] h-[100%]": "",
+        },
+        ".hidden_txt": {
+          "@apply absolute w-0 h-0 overflow-hidden text-[0] leading-[0] text-[rgba(0,0,0,0)]":
+            "",
         },
       });
     },
