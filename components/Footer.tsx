@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <footer className="bottom-0 footer-width bg-[#1D1F24] h-auto pb-5 flex flex-row justify-between items-center flex-wrap gap-y-1">
       <div className="flex flex-col items-start text-white">
-        <Logo mode="dark" />
+        <Logo />
         <span className="text-sm font-light px-[38px] opacity-70">
           © 2018 Deck
         </span>
